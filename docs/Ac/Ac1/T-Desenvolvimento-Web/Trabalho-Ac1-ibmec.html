@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Ac1</title>
+
+  <style>
+    /*DESIGN GERAL*/
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0px;
+      background-color: black;
+      color: white;
+      margin: 0px;
+      overflow-x: hidden;
+    }
+
+    /*HEADER*/
+
+    header, h1{
+      display: inline-block;
+      width: 100%;
+
+    }
+
+    .titulo{
+      background-color: cornflowerblue;
+    }
+
+    .foto-perfil{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      padding: 5px;
+    }
+
+    h1{
+      position: absolute;
+      padding: 15px;
+    }
+
+    h3{
+      padding-left: 10px;
+      padding-top:5px ;
+      margin: 0px;
+    }
+
+    p{
+      padding-left: 10px;
+    }
+
+    /*NAV*/
+
+    nav{
+      padding-bottom:40px;
+      display: flex;
+      justify-content:baseline;
+    }
+
+    ul, ol{
+      padding-top: 0px;
+      margin: 0px;
+    }
+
+    li{
+      padding-top: 10px;
+      line-height: 20px ;
+    }
+
+    /*SECTION-1*/
+
+    a{
+      color: white;
+      padding-left: 10px;
+    }
+
+    /*SECTION-2*/
+
+    .interesses{
+      width: 250px;
+      padding-right: 40px;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
+
+    .flex{
+      display: flex;
+    }
+
+    .jogo{
+      width: 250px;
+      height: 150px;
+      border: 3px solid yellow;
+      
+    }
+
+    /*FOOTER*/
+
+    footer{
+      background-color: cornflowerblue;
+    }
+
+  </style>
+</head>
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <div class="titulo">
+      <img class="foto-perfil" src="./opila.JPG" alt="Opila Bird">
+      <h1>Ana clara Henrique de Souza</h1>
+    </div>
+    <h3>Moro no Rio de Janeiro e nos tempos vagos curso ADS.</h3>
+    <p>
+      Nos tempos que não são vagos, fico no twitter checando se existe alguma atualização sobre silksong. Se não estou no twitter, estou jogando Hollow Knight ou Pokemon.
+    </p>
+  </header>
+
+  <!--Coisas que eu gosto-->
+  <nav>
+    <ol>
+      <li>Epic(Musical)</li>
+      <li>warrior of the mind(Musica)</li>
+      <li>Tumba do tirano(Livro)</li>
+    </ol>
+
+    <ul>
+      <li>Silksong</li>
+      <li>Pokemon</li>
+      <li>Minecraft</li>
+    </ul>
+  </nav>
+
+  <!--Atividades-->
+  <section>
+    <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/" target="_blank">Jogo favorito</a>
+    <br>
+    <a href="https://www.thejimquisition.com/post/garten-of-banban-i-to-iv-the-mascot-horror-grift-review" target="_blank">Artigo super interessante</a>
+  </section>
+
+  <div class="flex">
+    <section class="interesses">
+      <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank"><img class="jogo" src="./Jogar.jpg" alt="Hollow Knight"></a>
+      <p>Gosto muito de jogar video game, em especial Hollow Knight.</p>
+    </section>
+
+    <section class="interesses">
+      <a href="https://pt.duolingo.com/" target="_blank"><img class="jogo" src="./frances.png" alt="Duolingo em frânces"></a>
+      <p>Também gosto de aprender francês.</p>
+    </section>
+  </div>
+    
+  <!--Referências-->
+  <footer>
+    <h3>Referências:</h3>
+    <br>
+    <ul>
+      <a href="https://pin.it/6acudoZ7b" target="_blank"><li>1º Imagem</li></a>
+      <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank"><li>2º Imagem</li></a>
+      <a href="https://www.duolingo.com/" target="_blank"><li>3º Imagem</li></a>
+    </ul>
+  </footer>
+  
+</body>
+</html>
