@@ -6,6 +6,7 @@
     <title>AC2</title>
 
     <style>
+        /*Estilos Gerais*/
         body {
             margin: 0px;
             background-color: black;
@@ -23,6 +24,8 @@
         h3{
             margin-left: 10px;
         }
+
+        /*Formulario*/
 
         header {
             background-color: rgb(69, 128, 236);
@@ -47,12 +50,21 @@
             margin-bottom: 30px;
         }
 
+        /*Video e Audio*/
+
         #video{
             margin: 10px;
         }
 
         #audio{
             margin-left:10px;
+            margin-bottom: 30px;
+        }
+
+        footer{
+            background-color: cornflowerblue;
+            padding: 20px 10px;
+            text-align: center;
         }
     
     </style>
@@ -62,7 +74,7 @@
     <header>
         <h1>Feedback para a pagina de perfil da Ana clara</h1>
     </header>
-
+   <!-- INFORMAÇÕES DO USUARIO-->
     <form action="submit">
         <fieldset>
             <legend>Informações do Usuario</legend>
@@ -73,15 +85,18 @@
             <input type="email" name="email" placeholder="Digite seu Email">
         </fieldset>
 
+        <!--COMO O USUARIO ACHOU MEU PERFIL-->
         <fieldset>
             <legend>Como achou meu perfil</legend>
             <select name="como_achou" id="">
                 <option value="midias_sociais">Midias Sociais</option>
                 <option value="amigos">Amigos</option>
                 <option value="propagandas">Propagandas</option>
+                <option value="outros">outros</option>
             </select>
         </fieldset>
 
+        <!--OPINIÃO DOS USUARIOS SOBRE MEU PERFIL-->
         <fieldset>
             <legend>Opinião</legend>
             <label for="opiniao_escrita">Me dê sua opinião sobre meu perfil:</label><br>
@@ -99,6 +114,7 @@
             <label for="nao">Nâo</label>
         </fieldset>
 
+        <!--O QUE O USUARIO ACHOU DO MEU PERFIL-->
         <fieldset>
             <legend>o que você gostou no meu perfil?</legend>
             <input type="checkbox" name="" id="design">
@@ -118,13 +134,20 @@
 
     <hr>
 
+    <!--VIDEO TIRADO DO YOUTUBE-->
     <h3>video</h3>
 
     <iframe id="video" width="300" height="315" src="https://www.youtube.com/embed/JSfuFlhsxZY?si=j11dzwmPVhkyqkcS" frameborder="0" controls allowfullscreen></iframe><br>
 
+    <!--AUDIO DO SPOTIFY-->
     <h3>audio</h3>
 
     <iframe id="audio" src="https://open.spotify.com/embed/track/7pM9Mn8WdnjNjYEoMW93Nt?utm_source=generator&theme=0" width="20%" height="352" frameBorder="0" allowfullscreen="" ></iframe>
+
+    <!--FOOTER AGRADECENDO PELOS COMENTARIOS-->
+    <footer>
+        <h4>MUITO OBRIGADO A TODOS PELOS COMENTARIOS</h4>
+    </footer>
 
 </body>
 
