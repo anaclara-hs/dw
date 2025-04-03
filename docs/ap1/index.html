@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoTourBr</title>
+    <link rel="stylesheet" href="ecotour.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>ola</h1>
+    <header>
+        <div class="h-div">
+            <h1 class="logo">Eco<span class="tour">Tour</span></h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#servicos">serviços</a></li>
+                    <li><a class="nav-link" href="#destinos">Destinos</a></li>
+                    <li><a class="nav-link" href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicos">
+            <h2 class="titulo-seccao">Serviços</h2>
+            <hr class="separacao">
+            <p>Na nossa agência de turismo, criamos pacotes de viagens totalmente personalizados, adaptados ao seu
+                estilo, orçamento e preferências. Seja para uma viagem tranquila de relaxamento, uma aventura cheia de
+                adrenalina ou uma experiência cultural única, temos a opção perfeita para você. Nossa missão é
+                proporcionar momentos inesquecíveis, com total suporte e atenção aos detalhes. Entre em contato e
+                descubra como podemos planejar a viagem dos seus sonhos!</p>
+
+            <div class="pacote-servico-lista">
+                <ul class="servico-lista">
+                    <li><strong>Aventura:</strong> Para quem busca atividades emocionantes e desafiadoras. <br><br> <a
+                            class="saiba-mais" href="#contatos">Saiba Mais</a></li>
+
+                    <li><strong>Relaxamento:</strong> Pacotes de descanso em praias paradisíacas e spas. <br><br> <a
+                            class="saiba-mais" href="#contatos">Saiba Mais</a></li>
+
+                    <li><strong>Cultural:</strong> Descubra destinos históricos e culturais ao redor do Brasil.
+                        <br><br><br> <a class="saiba-mais" href="#contatos">Saiba Mais</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="destinos-favoritos">
+            <h2 class="titulo-seccao">Destinos Favoritos</h2>
+            <hr class="separacao">
+            <ul class="destinos-populares">
+                <li>
+                    <img class="destino-img" src="img/chapada-dos-veadeiros.jpg" alt="chapada dos veadeiros">
+                    <h3 class="titulo-destino">Chapada dos Veadeiros</h3>
+                    <p>Nossa companhia proporciona um tour de 5 dias repletos de emoção e cenários deslumbrantes. Neste
+                        passeio, você vai explorar os imponentes paredões de pedras, as cristalinas cachoeiras e a flora
+                        única do cerrado. Com atividades como caminhadas, banhos de cachoeira e observação da fauna, o
+                        tour é perfeito para quem deseja mergulhar nas belezas naturais da Chapada e viver uma
+                        experiência ecológica e transformadora.</p>
+                </li>
+
+                <li>
+                    <img class="destino-img" src="img/floresta-amazonica.jpg" alt="Floresta amazonica">
+                    <h3 class="titulo-destino">Floresta Amazônica</h3>
+                    <p>Nosso tour na Amazônia oferece uma experiência de 7 dias imersos nas belezas exuberantes. Este
+                        roteiro é perfeito para aqueles que desejam se conectar profundamente com a natureza e explorar
+                        as maravilhas deste ecossistema único. Prepare-se para viver momentos de pura aventura, com
+                        trilhas pela selva, passeios de barco pelos rios cristalinos e observação da vida selvagem, em
+                        um dos destinos mais ricos em biodiversidade do planeta.</p>
+                </li>
+
+                <li>
+                    <img class="destino-img" src="img/pantanal.avif" alt="Pantanal">
+                    <h3 class="titulo-destino">Pantanal</h3>
+                    <p>O Pantanal proporciona um emocionante passeio de 6 dias pelo maior pântano alagado do mundo. Este
+                        tour é ideal para quem busca uma imersão nas paisagens incríveis e na biodiversidade do
+                        Pantanal, com safáris fotográficos, observação de animais como onças e jacarés, e passeios de
+                        barco por seus rios tranquilos. Prepare-se para se deslumbrar com a vida selvagem em um dos
+                        ecossistemas mais fascinantes do Brasil.
+                    </p>
+                </li>
+            </ul>
+
+            <a href="reserva.html"><button class="reserve">FAÇA SUA RESERVE</button></a>
+        </section>
+
+        <section id="destino">
+            <h2 class="titulo-seccao">Tabela de Pacotes Turísticos</h2>
+            <hr class="separacao">
+            <div class="destinos-div">
+                <table>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Preço</th>
+                        <th>Duração</th>
+                    </tr>
+                    <tr>
+                        <td>Floresta Amazônica</td>
+                        <td>R$ 3.500,00</td>
+                        <td>7 dias</td>
+                    </tr>
+                    <tr>
+                        <td>Chapada dos Veadeiros</td>
+                        <td>R$ 2.800,00</td>
+                        <td>5 dias</td>
+                    </tr>
+                    <tr>
+                        <td>Pantanal</td>
+                        <td>R$ 3.200,00</td>
+                        <td>6 dias</td>
+                    </tr>
+                    <tr>
+                        <td>Lençóis Maranhenses</td>
+                        <td>R$ 3.000,00</td>
+                        <td>6 dias</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="titulo-seccao">Contato</h2>
+            <hr class="separacao">
+
+            <div class="formulario">
+                <form action="/submit">
+                    <label for="nome">Seu nome:</label><br>
+                    <input id="nome" type="text" name="nome" required placeholder="Digite seu nome" aria-label="Digite seu nome" minlength="3"><br>
+                    <small>Ex: João da silva</small>
+                    <br><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input id="email" type="email" name="email" required placeholder="email@dominio.com" aria-label="Digite seu email"><br>
+                    <small>Ex: email@dominio.com</small>
+                    <br><br>
+    
+                    <label for="ajudar">Como podemos ajudar:</label><br>
+                    <textarea name="ajudar" id="ajudar" placeholder="Descreva como podemos ajudar"></textarea><br>
+    
+                    <button class="enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>EcoTour 2025 © Todos os direitos Reservados.</p>
+    </footer>
 </body>
+
 </html>

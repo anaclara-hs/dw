@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTour</title>
+    <link rel="stylesheet" href="reserva.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"><h1 class="logo">Eco<span class="tour">Tour</span></h1></a>
+    </header>
+
+    <main>
+        <section class="reserva">
+            <h2 class="titulo-seccao">Reserva</h2>
+            <hr class="separacao">
+
+            <div class="formulario-reserva">
+                <form action="submit">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" minlength="3" required placeholder="Digite seu nome"><br>
+                    <small>Ex: João silva</small><br><br>
+
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="(99) 99999-9999"
+                        pattern="\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}"><br>
+                        <small>Ex: (99) 99999-9999</small><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="exemplo@dominio.com"><br>
+                    <small>Ex: exemplo@dominio.com</small><br><br>
+
+                    <label for="destino">Escolha seu destino:</label><br><br>
+                    <input type="radio" id="chapada-veadeiros" name="destino" value="chapada" required>
+                    <label for="chapada-veadeiros">Chapada dos Veadeiros</label><br>
+
+                    <input type="radio" id="Amazonia" name="destino" value="amazonia">
+                    <label for="amazonia">Floresta Amazonica</label><br>
+
+                    <input type="radio" id="lencois" name="destino" value="lencois">
+                    <label for="lencois">Lençois Maranhenses</label><br>
+
+                    <input type="radio" name="destino" id="pantanal" value="pantanal">
+                    <label for="pantanal">Pantanal</label><br>
+
+                    <button class="enviar" type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>EcoTour 2025 © Todos os direitos Reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    height: 5.8em;
+    color: white;
+
+}
+
+.logo {
+    margin: 0em;
+    font-size: 2rem;
+    padding: 1em 0em 0em 1em;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tour {
+    color: rgb(132, 199, 31);
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.titulo-seccao {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.separacao {
+    width: 2em;
+    border-radius: 5px;
+    border: 2px solid rgb(132, 199, 31);
+    margin-bottom: 2em;
+}
+
+.destinos-div{
+    width: 100%; 
+    overflow-x: auto; 
+    display: block; 
+    margin: 0 auto; 
+    padding: 0 10px;
+}
+
+.destinos table {
+    width: 100%; 
+    table-layout: fixed; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+}
+
+.destinos th {
+    background-color: rgb(132, 199, 31);
+    border: 1px solid black;
+}
+
+.destinos tr td {
+    border: 1px solid black;
+}
+
+.formulario-reserva{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em 0em;
+    border-radius: 10px;
+    background-color: rgb(132, 199, 31);
+}
+
+form{
+    width: 40%;
+}
+
+#nome, #telefone, #email{
+    height: 2em;
+    width: 18em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#nome:invalid, #telefone:invalid, #email:invalid{
+    border: 1px solid red;
+} 
+
+.enviar{
+    padding: 1em 2em;
+    margin-top: 0.9em;
+    border: 1px solid rgb(64, 128, 64);
+    background-color: greenyellow;
+}
+
+input::placeholder{
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: rgb(132, 199, 31);
+    padding: 2em;
+    margin: 2em 0em 0em 0em;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    h1 {
+        text-align: center;
+        padding-top: 1em;
+        padding-left: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .formulario-reserva{
+        width: 90%;
+    }
+
+    .form{
+        width: 90%;
+        margin: 0em 0.5em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 950px){
+    main {
+        margin-top: 5em;
+        width: 100%;
+    }
+
+    .formulario-reserva{
+        width: 80%;
+    }
+}
