@@ -1,0 +1,269 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 1400px;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #2563eb;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+.lista-menu li{
+  padding: 0 30px;
+  display: inline;
+  font-weight: 500;
+  color: white;
+}
+
+.lista-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.conteudo-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  white-space: pre-line;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.questionario-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-pergunta {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.div-titulo {
+  grid-column: span 2;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(54, 52, 52);
+}
+
+/* Inputs */
+
+.number-input,
+.range-input {
+  width: 90%;
+  height: 40px;
+  border: 1px solid lightgray;
+}
+
+.label-pergunta {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  margin: auto;
+}
+
+.radio-input {
+  width: 40px;
+  height: 40px;
+  padding: 40px;
+  margin: 12px;
+}
+
+/* Botões de navegação */
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.nav-buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6, 0 0 0 4px rgba(59, 130, 246, 0.25);
+}
+
+.nav-buttons .prox-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.nav-buttons .prox-button:hover {
+  background-color: #2563eb;
+}
+
+.nav-buttons .back-button {
+  background-color: #e5e7eb;
+  color: #374151;
+  border: none;
+}
+
+.nav-buttons .back-button:hover {
+  background-color: #d1d5db;
+}
+
+.nav-buttons .finish-button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  display: none;
+}
+
+.nav-buttons .finish-button:hover {
+  background-color: #059669;
+}
+
+.prox-button {
+  display: block;
+}
+
+.reset-button{
+  background-color: firebrick;
+  padding: 5px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Relatório */
+
+.relatorio {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.relatorio .flex-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.div-tamanho {
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* Gráfico */
+
+#graficoChart {
+  max-height: 400px;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+
+@media (max-width: 600px){
+  .flex-header{
+    display: block;
+    text-align: center;
+
+  }
+
+  nav{
+    background-color: #3b82f6;
+    margin: 1rem 0rem;
+    
+  }
+
+  .lista-menu {
+    padding: 0.4rem;
+  }
+  
+
+  .lista-menu li{
+    display: inline;
+    padding: 0rem 1rem;
+  }
+}
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dados Econômicos – Dinâmicos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style/dados.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex-header">
+            <h1 class="titulo-questionario">Dados Economicos</h1>
+            <nav>
+                <ul class="lista-menu">
+                    <a href="dados.html">
+                        <li>Questionario</li>
+                    </a>
+                    <a href="investimentos.html">
+                        <li>Investimentos</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2> Cotação de Moedas</h2>
+            <table id="moedas">
+                <thead>
+                    <tr>
+                        <th>Moeda</th>
+                        <th>Valor (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="loading">Carregando...</td>
+                    </tr>
+                </tbody>
+                <canvas id="grafico-moedas"></canvas>
+            </table>
+        </section>
+
+        <div class="div-conversor">
+            <h2>Conversor de Moedas</h2>
+            <input type="number" id="valor" placeholder="Valor em BRL" min="0">
+            <select id="moeda">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="BTC">BTC</option>
+            </select>
+            <button class="converter">Converter</button>
+            <div class="resultado" id="resultado-conversão">Resultado: R$ 0,00</div>
+        </div>
+
+        
+
+        <section>
+            <h2> Taxa Selic (meta)</h2>
+            <table id="selic">
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Valor (%)</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="loading">Carregando...</td>
+                    </tr>
+                </tbody>
+                <canvas id="grafico-selic"></canvas>
+            </table>
+        </section>
+
+        <section>
+            <h2> IPCA (Inflação)</h2>
+            <table id="ipca">
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Valor (%)</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="loading">Carregando...</td>
+                    </tr>
+                </tbody>
+                <canvas id="grafico-ipca"></canvas>
+            </table>
+        </section>
+
+        <section>
+            <h2> IGP-M (Índice Geral de Preços - Mercado)</h2>
+            <table id="igpm">
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Valor (%)</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="loading">Carregando...</td>
+                    </tr>
+                </tbody>
+                <canvas id="grafico-igpm"></canvas>
+            </table>
+        </section>
+    </main>
+
+
+
+    
+
+    <script src="scripts/dados.js"></script>
+</body>
+
+</html>

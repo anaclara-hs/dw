@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Questionario</title>
 </head>
+
 <body>
-    <h1>ola</h1>
+
+    <header>
+        <div class="flex-header">
+            <h1 class="titulo-questionario">Questionario</h1>
+            <nav>
+                <ul class="lista-menu">
+                    <a href="dados.html">
+                        <li>Dados Economicos</li>
+                    </a>
+                    <a href="investimentos.html">
+                        <li>Investimentos</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="conteudo-flex">
+        <div id="questionario-container" class="questionario-container">
+            <h2 class="titulo">Questionario de Investimentos</h2>
+
+            <div id="area-perguntas">
+                <div class="div-titulo">
+
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <button id="back-button" class="back-button hidden-btn">Anterior</button>
+                <button id="prox-button" class="prox-button">Próxima</button>
+                <button id="finish-button" class="finish-button hidden-btn">Finalizar o Questionario</button>
+            </div>
+        </div>
+
+        <div id="relatorio" class="relatorio">
+            <h1>Relatório do Questionario</h1>
+            <div class="flex-div">
+                <div class="div-tamanho">
+                    <canvas id="graficoChart"></canvas>
+                </div>
+            </div>
+
+            <h2>Opções de Investimento:</h2>
+            <div class="opcao"></div>
+            <button id="reset-button" class="reset-button">Refazer questionario</button>
+
+        </div>
+
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
