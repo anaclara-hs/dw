@@ -28,8 +28,25 @@
     </header>
 
     <main>
-        <section>
-            <h2> Cotação de Moedas</h2>
+        <div class="container-filtro">
+            <label for="filtro-investimentos">Buscar Investimento:</label>
+            <input type="text" id="filtro-investimentos" placeholder="Digite o nome do
+ investimento...">
+        </div>
+        <table id="tabela-investimentos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Rentabilidade Anual</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <section class="investimentos">
+            <h2> Cotacao de Moedas</h2>
             <table id="moedas">
                 <thead>
                     <tr>
@@ -58,9 +75,9 @@
             <div class="resultado" id="resultado-conversão">Resultado: R$ 0,00</div>
         </div>
 
-        
 
-        <section>
+
+        <section class="investimentos">
             <h2> Taxa Selic (meta)</h2>
             <table id="selic">
                 <thead>
@@ -79,8 +96,8 @@
             </table>
         </section>
 
-        <section>
-            <h2> IPCA (Inflação)</h2>
+        <section class="investimentos">
+            <h2> IPCA (Inflacao)</h2>
             <table id="ipca">
                 <thead>
                     <tr>
@@ -98,8 +115,8 @@
             </table>
         </section>
 
-        <section>
-            <h2> IGP-M (Índice Geral de Preços - Mercado)</h2>
+        <section class="investimentos">
+            <h2> IGP-M (Indice Geral de Preços - Mercado)</h2>
             <table id="igpm">
                 <thead>
                     <tr>
@@ -120,7 +137,7 @@
 
 
 
-    
+
 
     <script src="scripts/dados.js"></script>
 </body>

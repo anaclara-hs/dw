@@ -172,3 +172,30 @@ fetch("https://api.bcb.gov.br/dados/serie/bcdata.sgs.189/dados/ultimos/10?format
       }
     });
   });
+
+
+
+document.getElementById('filtro-investimentos').addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const filtrar = this.value.toLowerCase().trim();
+    const secoes = document.querySelectorAll('.investimentos');
+
+    if (filtrar === "") {
+      secoes.forEach(secao => secao.style.display = "block");
+      return;
+    }
+
+    secoes.forEach(secao => {
+      const titulo = secao.querySelector('h2')?.innerText.toLowerCase() || "";
+      
+      
+
+      if (titulo.includes(filtrar)) {
+        secao.style.display = "block";
+      } else {
+        secao.style.display = "none";
+      }
+    });
+  }
+});
+
